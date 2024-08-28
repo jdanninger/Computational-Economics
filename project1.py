@@ -47,8 +47,8 @@ for employee in hrbook:
         hrbook[employee]['salary'] = 8200
 
 
-# # 10. time your work
-# # record the end time
-# end_time =
-# t = end_time-start_time
-# print("spent %s seconds to run this script" %t)
+# 10. time your work
+# record the end time
+end_time = time.time()
+t = end_time-start_time
+print("spent %s seconds to run this script" %t)
