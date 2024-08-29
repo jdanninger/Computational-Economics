@@ -19,12 +19,15 @@ print(list1)
 # 5.generate a new list with entries from 14 to 40 with step size 2, name it list2
 list2 = list(range(14, 41, 2))
 
-# 6. write a loop, dividing the first 10 entries of list2 by 5, keep the rest of
+# 6. Write a loop, dividing the first 10 entries of list2 by 5, keep the rest of the list unchanged,
+# and store the result into list3.
 list3 = []
-for x in list2[:10]:
-    y = x / 5
-    list3.append(y)
-list3 = list3 + list2[10:]
+for x in range(len(list2)):
+    if x < 5:
+        list3.append(list2[x] / 5)
+    else:
+        list3.append(list2[x])
+
 
 #7. Given the dictionary hrbook, print the value associate with the key "emp2".
 hrbook= {
@@ -48,7 +51,6 @@ for employee in hrbook:
 
 
 # 10. time your work
-# record the end time
 end_time = time.time()
 t = end_time-start_time
 print("spent %s seconds to run this script" %t)
