@@ -79,13 +79,11 @@ for day in total_days:
     # add recovers to the recover group
     sir_sim[0, 2] += new_recovered
 
-
     # normalize the SIR (i.e., calculate % of population),
     susceptible_pop_norm.append(sir_sim[0, 0] / n)
     infected_pop_norm.append(sir_sim[0, 1] / n)
     recovered_pop_norm.append(sir_sim[0, 2] / n)
 
-    # and append to the record lists
 
 
 #3.5 store the simulation outcome in a outcome list
